@@ -1,3 +1,5 @@
+// import { type } from 'os';
+
 export class Satellite {
 
   name: string;
@@ -15,15 +17,20 @@ export class Satellite {
 
   }
 
-  // //part 6
-  // shouldShowWarning {
-  //   let phrase = `${this.type}`;
-  //   if (phrase.toUpperCase === "SPACE DEBRIS") {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
+  //part 6
+
+  shouldShowWarning () {
+    //need to make case insensitive toUpperCase
+
+    let phrase = this.type.toLowerCase();
+
+
+    if (phrase === "space debris") {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 }
 

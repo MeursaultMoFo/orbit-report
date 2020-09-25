@@ -1,3 +1,4 @@
+import { type } from 'os';
 import { Satellite } from './satellite';
 
 describe('Satellite', () => {
